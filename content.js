@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
       // Send userCode to the background script for API processing
       chrome.runtime.sendMessage({action: 'processCode', code: userCode}, function(response) {
+        console.log(('Debug Info:', response.debugInfo));
         // Handle response, such as highlighting errors
         if (response && response.errors) {
           // Highlight errors or replace code

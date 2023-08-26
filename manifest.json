@@ -20,7 +20,6 @@
       "default_popup": "popup/popup.html"
     },
     "background": {
-      "service_worker": "background.js"
+        "service_worker": "dist/background.bundle.js"
     }
   }
-  
